@@ -1,0 +1,38 @@
+h1,h2,h3,h4,h5,h6
+{
+    border-bottom: 4px solid red;
+}
+
+h2
+{
+    clear: right;
+}
+
+figure > img
+{
+    float: right;
+    width: 40%;
+    margin-right: 1vw;
+}
+
+figcaption {
+    float: right;
+    clear: right;
+    margin-right: 1vw;
+}
+
+div.tet
+{
+    float: left;
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid black;
+}
+
+footer
+{
+    clear: both;
+    position: fixed;
+    top: 0px;
+    right: 1vw;
+}

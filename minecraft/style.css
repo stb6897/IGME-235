@@ -1,0 +1,158 @@
+/*
+    Fonts
+*/
+@font-face {
+    font-family: 'retro_computerregular';
+    src: url('fonts/retro_computer_personal_use-webfont.woff2') format('woff2'),
+         url('fonts/retro_computer_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dogica_pixelregular';
+    src: url('fonts/dogicapixel-webfont.woff2') format('woff2'),
+         url('fonts/dogicapixel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+    Resets
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+    General
+*/
+body {
+    color: #FFFFFF;
+    background-color: #35363D;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'retro_computerregular', Courier, monospace;
+}
+h1 {
+    display: inline;
+}
+header img {
+    width: 2em;
+}
+p {
+    font-family: 'dogica_pixelregular', Courier, monospace;
+}
+/*
+    Header
+*/
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background-color: #686868;
+    padding: 1vh;
+}
+header #hleft {
+    display: inline;
+}
+header #hright {
+    text-align-last: right;
+}
+/*
+    First Main, Oak Tree
+*/
+.main-oak {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+    margin: 6vh;
+    margin-left: 12vh;
+    margin-right: 12vh;
+
+}
+.main-oak #oak-image {
+    float: right;
+    margin: auto 0;
+}
+.main-oak div img {
+    background-image: linear-gradient(135deg, #E8FDF5, #224D3E);
+    display: block;
+    border: 1rem solid #FFFFFF;
+    padding: 4em;
+}
+.main-oak #oak-text {
+    float: left;
+    background-color: #686868;
+}
+.main-oak #oak-text h2 {
+    margin: 1em;
+}
+.main-oak #oak-text p {
+    margin: 2em;
+}
+/*
+    Second Main, Valley Image
+*/
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    max-width: 100%;
+}
+/*
+    Third Main, Items
+*/
+.main-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-column-gap: 0.5%;
+    grid-row-gap: 2%;
+    margin: 6vh;
+    margin-left: 12vh;
+    margin-right: 12vh;
+}
+.main-items .items-image {
+    background-color: #324E44;
+    border: 0.25rem solid #FFFFFF;
+    margin: auto;
+}
+.main-items .items-image h3 {
+    position: relative;
+    text-align: center;
+}
+.main-items .items-text {
+    background-color: #686868;
+
+}
+.main-items .items-text h1 {
+    margin: 1em;
+
+}
+.main-items .items-text p {
+    margin: 2em;
+}
+/*
+    Footer
+*/
+footer {
+    background-image: url("assets/trees.jpg");
+    height: 230px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+footer #fleft {
+    text-align: left;
+}
+footer #fright {
+    text-align: right;
+}

@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: grey;
+    padding: 1em;
+}
+h1 {
+    padding: 1em;
+    margin: auto;
+}
+canvas {
+    margin: auto;
+}

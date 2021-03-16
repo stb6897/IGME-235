@@ -1,0 +1,32 @@
+body {
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    color: white;
+    background-color: purple;
+}
+
+p {
+    font-size: large;
+    font-weight: bold;
+}
+
+#shake-button{
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.6s;
+    background-color: rebeccapurple;
+    width: 300px;
+    height: 60px;
+    font-size: x-large;
+    color: white;
+}
+
+#shake-button:hover {
+    background-color: purple;
+}
+
+#shake-button:active {
+    background-color: rgb(255, 255, 255);
+}

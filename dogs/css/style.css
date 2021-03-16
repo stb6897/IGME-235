@@ -1,0 +1,133 @@
+/*|All|*/
+* {
+    font-family: 'Roboto',sans-serif;
+    margin: none;
+    padding: 0px;
+}
+
+body {
+    background-color: #16db93;
+}
+
+/*|Header|*/
+header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+}
+header h1 {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*|Main|*/
+input[type="image"]
+{
+    color:white;
+    border: none;
+    outline:none;
+}
+
+
+/*|Randomizer|*/
+#randomizer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: white;
+    padding: 2em;
+}
+#randomizer_image {
+    margin: auto;
+    border-radius: 80%;
+    border: 10px solid #16b67c;
+    height: 300px;
+}
+#randomizer_button {
+    margin: auto;
+}
+#dogbreed {
+    margin: auto;
+}
+
+/*|Search|*/
+#search {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #16b67c;
+    padding: 2em;
+}
+#search label{
+    align-self: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+#breed {
+    max-width: 300px;
+    min-width: 200px;
+    align-self: center;
+}
+#subbreed {
+    max-width: 300px;
+    min-width: 200px;
+    align-self: center;
+}
+button {
+    max-width: 300px;
+    min-width: 200px;
+    align-self: center;
+}
+
+/*|Footer|*/
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    background-color: #16b67c;
+}
+
+footer p {
+    margin: auto;
+    color: white;
+}
+
+/*|Links|*/
+a:link
+{
+    color: #023e8a;
+}
+
+a:visited
+{
+    color: #023e8a;
+}
+
+a:focus
+{
+    color: rgb(28, 35, 33);
+}
+
+a:hover
+{
+    color: rgb(28, 35, 33);
+}
+
+a:active
+{
+    color: rgb(28, 35, 33);
+}
+
+
+@media only screen and (max-width: 600px) {
+    #randomizer_image {
+        margin: auto;
+        border-radius: 80%;
+        border: 10px solid #16b67c;
+        height: 200px;
+    }
+}

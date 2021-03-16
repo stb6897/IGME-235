@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dog Yard</title>
+</head>
+
+<body>
+    <header class="shadow">
+        <h1>Dog Yard</h1>
+    </header>
+    <main>
+        <div class="shadow">
+            <div id="main_image">
+                <img src="https://images.dog.ceo/breeds/terrier-patterdale/Patterdale.jpg" alt="nothing"
+                    id="randomizer_image" class="circular">
+            </div>
+            <div id="randomizer">
+                <button type="button" id="randomizer_button">randomize</button>
+                <h2 id="dog_breed">Dog Name</h2>
+            </div>
+        </div>
+        <div class="shadow" id="search_box">
+            <label for="breed">Breeds</label>
+            <select name="breed" id="breed" class="option">
+                <option value="none">random</option>
+            </select>
+            <label for="sub_breed">Sub Breeds</label>
+            <select name="sub_breed" id="sub_breed" class="option">
+                <option value="none">random</option>
+            </select>
+            <label for="amount">Amount</label>
+            <select name="amount" id="amount" class="option">
+                <option value=1>1</option>
+                <option value=4>4</option>
+                <option value=8>8</option>
+                <option value=16>16</option>
+            </select>
+            <button type="button" id="search_button">search</button>
+        </div>
+        <div class="shadow">
+            <div id="content">
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

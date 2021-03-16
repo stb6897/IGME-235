@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>DOM-3</title>
+	<style>
+		body {
+			border: 1px solid gray;
+		}
+
+		p b {
+			transform: rotate(20deg)
+		}
+	</style>
+</head>
+
+<body>
+	<h1>My Page</h1>
+	<h2>Info</h2>
+	<h2>Pictures</h2>
+	<h2>More Info</h2>
+	<p>Blah <b>Blah</b> Blah</p>
+	<p>Blah <b>Blah</b> Blah</p>
+	<p id="lastParagraph">Blah <b>Blah</b> Blah</p>
+	<footer>Copyright &copy; <b>20XX</b></footer>
+	<script>
+		"use strict";
+
+		// add your own code here.
+		document.getElementsByTagName("h1")[0].innerHTML = "My UFO Page";
+		document.getElementsByTagName("h2")[0].innerHTML = "My UFO Info";
+		document.getElementsByTagName("h2")[1].innerHTML = "My UFO Pictures";
+		document.getElementsByTagName("h2")[2].innerHTML = "";
+		document.body.style.fontFamily = "sans-serif";
+		document.body.style.color = "#ff0000";
+
+		let a = document.createElement("a");
+		a.innerHTML = "http://www.nuforc.org";
+		a.href = "http://www.nuforc.org";
+		let p = document.getElementsByTagName("p")[0];
+		p.innerHTML = "Report your UFO sightings here: ";
+		p.append(a);
+		p.style.color = "green";
+		p.style.fontWeight = "bold";
+		p.style.fontSize = "2em";
+		p.style.textTransform = "uppercase";
+		p.style.textShadow = "3px 2px #A44";
+
+
+		let img = document.createElement("img");
+		img.src = "https://m.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/04/28/Pictures/ufo-in-space_e22330e2-8917-11ea-8e78-f1b6d2f5bc87.jpg"
+		document.getElementsByTagName("p")[1].innerHTML = "";
+		document.getElementsByTagName("p")[1].append(img);
+
+		document.getElementsByTagName("footer")[0].innerHTML = "© 2020 Sevan Buechele"
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1em;
+    background-image: url('../images/bg_web.png');
+    background-repeat: repeat;
+}
+header {
+    margin: auto;
+}
+p,img {
+    color: white;
+    margin: auto;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background-color: #111111;
+    padding: 2em;
+}
+a {
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 1em;
+}
+h1 {
+    padding: 1em;
+    margin: auto;
+    color: white;
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 64px;
+    text-shadow: 0 0 10px black;
+}
+h2 {
+    padding: 1em;
+    margin: auto;
+    color: white;
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 32px;
+    text-shadow: 0 0 10px black;
+}
+canvas {
+    width: 50%;
+    margin: auto;
+    border-radius: 2em;
+    box-shadow: 0 0 0.5em;
+}

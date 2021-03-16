@@ -1,0 +1,214 @@
+/*
+    Resets
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+    General
+*/
+body {
+    color: #FFFFFF;
+    background-color: #35363D;
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+p {
+    font-weight: 400;
+}
+h1 {
+    display: inline;
+}
+
+a:link {
+    text-decoration: none;
+}
+a h2:hover {
+    text-decoration: none;
+}
+
+a h2:visited {
+    text-decoration: none;
+}
+
+a h2:hover {
+    color: #35363D;
+    text-decoration: none;
+}
+
+a h2:active {
+    text-decoration: none;
+}
+
+
+/*
+    Header
+*/
+header {
+    display: flex;
+    flex-flow: row;
+
+    background-color: rgb(24, 24, 24);
+
+}
+header #title {
+    display: inline;
+    margin: 2rem;
+}
+
+header #title h2 {
+    font-weight: 100;
+}
+
+nav {
+    margin: 2rem;
+    display: flex;
+}
+nav h2 {
+    padding: 1rem;
+}
+
+
+/*
+    First Main, About
+*/
+.main-about {
+
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+
+    margin-top: 5vh;
+
+}
+.main-about #about-image {
+    margin: auto;
+}
+.main-about #about-text {
+    width: auto;
+    height: auto;
+    background-color: rgb(24,24,24);
+}
+.main-about #about-text h2 {
+    margin: 1em;
+}
+.main-about #about-text p {
+    margin: 2em;
+}
+
+/*
+    Second Main, Project Items
+*/
+#projects-header {
+    display: flex;
+    flex-flow: row;
+
+    background-color: rgb(24, 24, 24);
+    padding: 3vh;
+    padding-left: 6vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.main-items h2 {
+    margin: 1em;
+}
+.main-items {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-row-gap: 2%;
+    grid-column-gap: 2%;
+    margin-left: 5vh;
+    margin-right: 30vh;
+    margin-bottom: 10vh;
+}
+.main-flex {
+    display: flex;
+}
+.main-items .items-image h2 {
+    display: flex;
+    justify-content: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.main-items .items-text {
+    background-color: rgb(24,24,24);
+}
+.main-items .items-text h1 {
+    margin: 1em;
+
+}
+.main-items .items-text p {
+    margin: 2em;
+}
+
+
+/*
+    Footer
+*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: auto;
+    margin-top: 4rem;
+    background-color: rgb(24,24,24);
+}
+
+footer h2 {
+    font-weight: 100;
+}
+
+@media (max-width: 1195px) {
+    header{
+        justify-content: center;
+        flex-direction: column;
+        justify-self: center;
+    }
+    nav {
+        margin: 2rem;
+        flex-direction: column;
+    }
+    #projects-header {
+        justify-content: space-around;
+    }
+    .main-about {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-about #about-text {
+        width: auto;
+        height: auto;
+        background-color: rgb(24,24,24);
+        margin-top: 2rem;
+    }
+    .main-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-about div img {
+        display: flex;
+        justify-self: center;
+        margin: auto;
+    }
+    .main-items {
+        justify-self: center;
+        margin: auto;
+        grid-template-columns: auto;
+        margin-left: 15vh;
+        margin-right: 15vh;
+        margin-bottom: 60vh;
+    }
+    .main-items .items-image h2 {
+        margin: 2rem;
+        justify-content: space-around;
+    }
+    .main-items .items-image {
+        margin: auto;
+    }
+}

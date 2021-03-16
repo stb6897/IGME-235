@@ -1,0 +1,127 @@
+/*|General Style Info|*/
+* {
+    font-family: 'Roboto',sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #f7567c;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0.5em;
+    font-size: 4em;
+    color: #fcfcfc;
+}
+h2 {
+    padding-top: 1em;
+    font-size: 2em;
+    color: #fcfcfc;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 2em;
+}
+img {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 60vw;
+    height: 60vw;
+
+    max-width: 60vh;
+    max-height: 60vh;
+
+    min-width: 300px;
+    min-height: 300px;
+    margin-top: 2.5em;
+}
+label {
+    align-self: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #5d576b;
+}
+
+/*|Tags|*/
+#randomizer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 1em;
+}
+#dog_breed {
+    margin: auto;
+    padding-bottom: 1em;
+}
+#main_image {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding-bottom: 2em;
+}
+#search_box {
+    max-width: 20vw;
+    max-height: 10vw;
+    min-width: 400px;
+    min-height: 250px;
+    margin: auto;
+    margin-bottom: 2em;
+    background-color: #fffae3;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+#search_button {
+    margin-top: 1.25em;
+}
+#randomizer_button, #search_button {
+    background-color: #99e1d9;
+    border: none;
+    color: #fcfcfc;
+
+    text-align: center;
+    font-size: 1em;
+    transition: 0.3s;
+    border: none;
+    outline:none;
+    margin: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 200px;
+    border-radius: 12px;
+}
+#randomizer_button:hover ,#search_button:hover {
+    background-color: #5d576b;
+    width: 190px;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+/*|Classes|*/
+.option {
+    width: 50%;
+    align-self: center;
+}
+.shadow {
+    filter: drop-shadow(-1px 6px 3px rgba(93, 87, 107, 0.5));
+}
+.circular {
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+}

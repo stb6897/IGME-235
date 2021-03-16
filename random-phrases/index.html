@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&amp;display=swap" rel="stylesheet">
+    <title>Magic 8 Ball</title>
+</head>
+
+<body>
+    <header>
+        <h1>Magic 8 Ball</h1>
+    </header>
+    <main>
+        <div>
+            <p id="text-slot">
+                Shake!
+            </p>
+            <p id="text-slot">
+                <img src="images/8ball.png" alt="Magic 8 Ball" style="width: 200px">
+            </p>
+            <input id="shake-button" type="button" value="Shake 8 Ball">
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            Sevan Buechele 2020
+        </p>
+    </footer>
+    <script>
+        let answers = [
+            "Yes",
+            "No",
+            "Maybe",
+            "Why would you even ask?",
+            "If COVID-19 permits it.",
+            "You know, maybe you should ask something that isn't a plastic talking ball for help.",
+            "Sure",
+            "No way.",
+            "I'll leave that up to you.",
+            "Weird flex but ok.",
+        ]
+        let text = document.getElementById("text-slot")
+        function shakeBall() {
+            let index = Math.floor(Math.random() * answers.length);
+            text.innerHTML = answers[index];
+        }
+        document.getElementById("shake-button").addEventListener("click", shakeBall);
+    </script>
+</body>
+
+</html>
